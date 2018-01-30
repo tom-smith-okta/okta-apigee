@@ -28,6 +28,9 @@ Several notes:
   * click the "develop" tab to view the flows and source XML
   * open the Verify-JWT-1 policy
     * update the Issuer value with your authorization server URL
+
+![authorization server](https://s3.amazonaws.com/tom-smith-okta-api-center/authz_server.png "Authorization server")
+
   * you are now deployed!
 
 ## Testing
@@ -44,6 +47,9 @@ There are three built-in proxy endpoints that you can test against. All of these
   * if the access token is valid AND includes the scope "http://myapp.com/scp/gold", this proxy endpoint will pass on the request to the target endpoint, which will return a list of moons.
 
 The logic behind this scheme is in the main proxy flow: parse + validate a JWT obtained from Okta.
+
+![main flow](https://s3.amazonaws.com/tom-smith-okta-api-center/authz_server.png "main flow")
+
 
 You can adjust the values here to suit your own use-case.
 
