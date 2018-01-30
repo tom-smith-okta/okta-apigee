@@ -48,7 +48,7 @@ There are three built-in proxy endpoints that you can test against. All of these
 
 The logic behind this scheme is in the main proxy flow: parse + validate a JWT obtained from Okta.
 
-![main flow](https://s3.amazonaws.com/tom-smith-okta-api-center/authz_server.png "main flow")
+![main flow](https://s3.amazonaws.com/tom-smith-okta-api-center/main_flow.png "main flow")
 
 
 You can adjust the values here to suit your own use-case.
