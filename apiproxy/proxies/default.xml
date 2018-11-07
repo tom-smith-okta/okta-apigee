@@ -40,12 +40,12 @@
                 </Step>
                 <Step>
                     <FaultRules/>
-                    <Condition>(proxy.pathsuffix MatchesPath "/planets") and (jwt.Verify-JWT-1.custom_claim.scp !~ "*http://myapp.com/scp/silver*"</Condition>
+                    <Condition>(proxy.pathsuffix MatchesPath "/planets") and (jwt.Verify-JWT-1.claim.scp !~ "*http://myapp.com/scp/silver*"</Condition>
                     <Name>RF-MissingRequiredScope</Name>
                 </Step>
                 <Step>
                     <FaultRules/>
-                    <Condition>(proxy.pathsuffix MatchesPath "/moons") and (jwt.Verify-JWT-1.custom_claim.scp !~ "*http://myapp.com/scp/gold*"</Condition>
+                    <Condition>(proxy.pathsuffix MatchesPath "/moons") and (jwt.Verify-JWT-1.claim.scp !~ "*http://myapp.com/scp/gold*"</Condition>
                     <Name>RF-MissingRequiredScope</Name>
                 </Step>
                 <Step>
